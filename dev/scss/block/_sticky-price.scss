@@ -1,0 +1,31 @@
+.sticky-price {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	flex-direction: row;
+	padding: 1% 5%;
+	background-color: #cccccc;
+	.sticky-price__price-total,
+	.sticky-price__discuss {
+		width: 45%;
+	}
+	.sticky-price__price-total {
+		#price-holder {
+			background-color: gray;
+			display: inline-block;
+			padding: 2px 50px;
+			color: #fff;
+			font-size: 30px;
+		}
+	}
+	.sticky-price__button-holder {
+		width: 10%;
+	}
+}
+
+.main {
+	padding-bottom: 15%;
+}
+

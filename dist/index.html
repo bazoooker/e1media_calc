@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>HTML5 basic template</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' href='css/main.css' />
+  
+</head>
+
+<body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+<div class="header">
+
+        <h1>скучный дефолтный хедер</h1>
+ 
+</div>
+
+<div class="main">
+
+  <div class="site-type">
+    <h2>Какой сайт делаем?</h2>   
+
+    <div class="site-type-tabs">
+      <button id="" class="site-type-tabs__tab" onclick="openTab(event, 'promo')">промо</button>
+      <button id="" class="site-type-tabs__tab" onclick="openTab(event, 'corp')">корпоративный</button>
+      <button id="" class="site-type-tabs__tab" onclick="openTab(event, 'shop')">магазин</button>
+    </div>
+
+    <div id="promo" class="tab-content">
+      Промо-сайт или лендинг - одностраничный сайт. Используется для "посадки" трафика с контекстной рекламы; сезонных продаж.
+    </div>
+    <div id="corp" class="tab-content">
+      КОРПОРАТИВНЫЙ
+    </div>
+    <div id="shop" class="tab-content">
+      МАГАЗИН
+    </div>
+  </div>
+
+<!-- <div class="site-type">
+    <h2>Какой сайт делаем?</h2>   
+
+    <div class="site-type-tabs">
+      <button class="site-type-tabs__tab" onclick="openTab(event, 'promo')">промо</button>
+      <button class="site-type-tabs__tab" onclick="openTab(event, 'corp')">корпоративный</button>
+      <button class="site-type-tabs__tab" onclick="openTab(event, 'shop')">магазин</button>
+    </div>
+
+    <div id="promo" class="tab-content">
+      ПРОМО
+    </div>
+    <div id="corp" class="tab-content">
+      КОРПОРАТИВНЫЙ
+    </div>
+    <div id="shop" class="tab-content">
+      МАГАЗИН
+    </div>
+  </div> -->
+
+
+  <div class="features">
+    <h2>Плюшечки нужны?</h2>
+    <div class="checkbox-holder">
+      
+      <div class="features__checkbox"> 
+        <input id="toggle-1" onclick="addFeature(15000)" class="toggle-round" type="checkbox">
+        <label for="toggle-1"></label>
+        <p>Адаптивная верстка</p>
+      </div>
+
+      <div class="features__checkbox">
+        <input id="toggle-2" onclick="addFeature(27000)" class="toggle-round" type="checkbox">
+        <label for="toggle-2"></label>
+        <p>Интеграция с 1С</p>
+      </div>
+
+      <div class="features__checkbox">
+        <input id="toggle-3" onclick="addFeature(12000)" class="toggle-round" type="checkbox">
+        <label for="toggle-3"></label>
+        <p>SEO-оптимизация</p>
+      </div>
+
+      <div class="features__checkbox">
+        <input id="toggle-4" onclick="addFeature(50000)" class="toggle-round" type="checkbox">
+        <label for="toggle-4"></label>
+        <p>Всё нужно еще вчера!</p>
+      </div>
+    </div>    
+  </div>
+
+</div>
+
+
+<div class="sticky-price">
+  
+  <div class="sticky-price__price-total">
+    <h3>Ориентировочная цена</h3>
+    <div id="price-holder">
+      0
+    </div>
+    руб.
+  </div>
+
+  <div class="sticky-price__discuss">
+    <h3>Обсудим проект?</h3>
+    <p>Нужен нестандартный вывод товаров?        
+    <br/>Нужна интеграция с мобильным приложением?
+    <br/>Хотите, чтобы поперек экрана скакали единороги?</p>
+  </div>
+  <div class="sticky-price__button-holder">
+    <button id="modal">Обсудить проект</button>  
+  </div>
+  
+
+</div>
+
+
+
+<script src='js/script.js'></script>  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</body>
+
+</html>
