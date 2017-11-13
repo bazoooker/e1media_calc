@@ -22,7 +22,7 @@
  
 </div>
 
-<div class="main">
+<div class="main"><!-- main begin -->
 
   <div class="site-type">
     <h2>Какой сайт делаем?</h2>   
@@ -65,10 +65,11 @@
   </div> -->
 
 
-  <div class="features">
+  <div class="features"><!--features begin-->
+
     <h2>Плюшечки нужны?</h2>
-    <div class="checkbox-holder">
-      
+    <div class="checkbox-holder"> <!--checkbox-holder begin-->  
+
       <div class="features__checkbox"> 
         <input id="toggle-1" onclick="addFeature(15000)" class="toggle-round" type="checkbox">
         <label for="toggle-1"></label>
@@ -92,10 +93,23 @@
         <label for="toggle-4"></label>
         <p>Всё нужно еще вчера!</p>
       </div>
-    </div>    
-  </div>
 
-</div>
+    </div><!--checkbox-holder end--> 
+
+  </div><!--features end-->
+
+
+  <div class="range-pages"><!--range-bar begin-->
+
+    <div id="rangecontainer">
+      <input type="range" min="1" max="100" value="50" class="input-range" id="range-slider">
+    </div>
+    <h4 style="text-align: center;">Сколько страниц нужно заполнить?</h4>
+    <div id="output"></div>
+
+  </div><!--range-bar end-->
+
+</div><!-- main end -->
 
 
 <div class="sticky-price">

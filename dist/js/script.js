@@ -58,92 +58,14 @@ function addFeature(modificator) {
 }
 
 
-// function addFeature() {
-// 	if (document.getElementById("toggle-1").checked && priceTotal != 0)  {
-// 		priceTotal += 10000;	
-// 	}
-// 	else if (!document.getElementById("toggle-1").checked && priceTotal != 0) {
-// 		priceTotal -= 10000;	
-// 	};
+// слайдер кол-ва страниц
 
-// 	priceHolder.innerHTML = priceTotal;
-// }
+var rangeSlider, output;
 
+rangeSlider = document.getElementById("range-slider");
+output = document.getElementById("output");
+output.innerHTML = rangeSlider.value;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function openPromo() {
-
-// 	var i, tabcontent, tablinks, promo; 
-
-
-// 	tabcontent = document.getElementsByClassName("tab-content");
-// 	for (i = 0; i < tabcontent.length; i++) {
-// 		tabcontent[i].style.display = "none";
-// 	}
-
-// 	tablinks = document.getElementsByClassName("site-type-tabs__tab");
-// 	for (i = 0; i < tablinks.length; i++) {
-// 		tablinks[i].className = tablinks[i].className.replace("site-type-tabs__tab_active", "");
-// 	}
-
-// 	promo = document.getElementById('promo');
-// 	promo.style.display = "block";
-
-// 	tablinks[0].className += " site-type-tabs__tab_active";
-// }
-
-
-// function openCorp() {
-
-// 	var i, tabcontent, tablinks, corp; 
-
-
-// 	tabcontent = document.getElementsByClassName("tab-content");
-// 	for (i = 0; i < tabcontent.length; i++) {
-// 		tabcontent[i].style.display = "none";
-// 	}
-
-// 	tablinks = document.getElementsByClassName("site-type-tabs__tab");
-// 	for (i = 0; i < tablinks.length; i++) {
-// 		tablinks[i].className = tablinks[i].className.replace("site-type-tabs__tab_active", "");
-// 	}
-
-// 	corp = document.getElementById('corp');
-// 	corp.style.display = "block";
-
-// 	tablinks[1].className += " site-type-tabs__tab_active";
-// }
-
-
-// function openShop() {
-
-// 	var i, tabcontent, tablinks, shop; 
-
-
-// 	tabcontent = document.getElementsByClassName("tab-content");
-// 	for (i = 0; i < tabcontent.length; i++) {
-// 		tabcontent[i].style.display = "none";
-// 	}
-
-// 	tablinks = document.getElementsByClassName("site-type-tabs__tab");
-// 	for (i = 0; i < tablinks.length; i++) {
-// 		tablinks[i].className = tablinks[i].className.replace("site-type-tabs__tab_active", "");
-// 	}
-
-// 	shop = document.getElementById('shop');
-// 	shop.style.display = "block";
-
-// 	tablinks[2].className += " site-type-tabs__tab_active";
-// }
+rangeSlider.oninput = function() {
+	output.innerHTML = this.value;
+}
