@@ -28,9 +28,9 @@
     <h2>Какой сайт делаем?</h2>   
 
     <div class="site-type-tabs">
-      <button id="" class="site-type-tabs__tab" onclick="openTab(event, 'promo')">промо</button>
-      <button id="" class="site-type-tabs__tab" onclick="openTab(event, 'corp')">корпоративный</button>
-      <button id="" class="site-type-tabs__tab" onclick="openTab(event, 'shop')">магазин</button>
+      <button id="" class="site-type-tabs__tab" onclick="sitePick(event, 'promo', 50000)">промо</button>
+      <button id="" class="site-type-tabs__tab" onclick="sitePick(event, 'corp', 100000)">корпоративный</button>
+      <button id="" class="site-type-tabs__tab" onclick="sitePick(event, 'shop', 150000)">магазин</button>
     </div>
 
     <div id="promo" class="tab-content">
@@ -71,25 +71,25 @@
     <div class="checkbox-holder"> <!--checkbox-holder begin-->  
 
       <div class="features__checkbox"> 
-        <input id="toggle-1" onclick="addFeature(15000)" class="toggle-round" type="checkbox">
+        <input id="toggle-1" onclick="addFeature('feature1', 15000)" class="toggle-round" type="checkbox">
         <label for="toggle-1"></label>
         <p>Адаптивная верстка</p>
       </div>
 
       <div class="features__checkbox">
-        <input id="toggle-2" onclick="addFeature(27000)" class="toggle-round" type="checkbox">
+        <input id="toggle-2" onclick="addFeature('feature2', 27000)" class="toggle-round" type="checkbox">
         <label for="toggle-2"></label>
         <p>Интеграция с 1С</p>
       </div>
 
       <div class="features__checkbox">
-        <input id="toggle-3" onclick="addFeature(12000)" class="toggle-round" type="checkbox">
+        <input id="toggle-3" onclick="addFeature('feature3', 12000)" class="toggle-round" type="checkbox">
         <label for="toggle-3"></label>
         <p>SEO-оптимизация</p>
       </div>
 
       <div class="features__checkbox">
-        <input id="toggle-4" onclick="addFeature(50000)" class="toggle-round" type="checkbox">
+        <input id="toggle-4" onclick="addFeature('feature4', 50000)" class="toggle-round" type="checkbox">
         <label for="toggle-4"></label>
         <p>Всё нужно еще вчера!</p>
       </div>
