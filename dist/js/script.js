@@ -77,7 +77,7 @@
 // новая версия
 
 
-var sitePrice, mod1, mod2, mod3, mod4, pages, priceTotal;
+var sitePrice, mod1, mod2, mod3, mod4, pages, priceTotal, priceHolder;
 
 sitePrice = 0;
 mod1 = 0;
@@ -85,6 +85,7 @@ mod2 = 0;
 mod3 = 0;
 mod4 = 0;
 pages = document.getElementById("range-slider").value;
+priceHolder = document.getElementById("price-holder");
 
 
 
@@ -95,7 +96,6 @@ function sitePick(evt, siteId, price) {
 	allTabs 	= document.getElementsByClassName("site-type-tabs__tab");
 	tabContent 	= document.getElementsByClassName("tab-content");
 	tabShown 	= document.getElementById(siteId);
-	priceHolder = document.getElementById("price-holder");
 	sitePrice	= price;
 
 	// удаляем у всех вкладок класс "active"
@@ -151,10 +151,6 @@ function addFeature(featureNum, featurePrice) {
 	}
 
 
-
-
-
-
 	// пересчитаем стоимость проекта
 	priceTotal = sitePrice + mod1 + mod2 + mod3 + mod4 + (+pages); 
 
@@ -162,6 +158,16 @@ function addFeature(featureNum, featurePrice) {
 	priceHolder.innerHTML = priceTotal;
 }
 
+function updatePagePrice(val) {
+	pages = val;
+	var output = document.getElementById("output");
+	output.innerHTML = pages;
+	// пересчитаем стоимость проекта
+	priceTotal = sitePrice + mod1 + mod2 + mod3 + mod4 + (+pages); 
+
+	// обновим цену проекта
+	priceHolder.innerHTML = priceTotal;
+}
 
 
 
